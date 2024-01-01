@@ -58,10 +58,10 @@ def whois_query(domain):
         "za": "co.za",
         "ng": "whois.nic.net.ng",
         "ke": "whois.kenic.or.ke",
-        # Tambahkan server WHOIS untuk ekstensi domain lain di sini
+      
     }
 
-    # Menambahkan 50 server WHOIS tambahan
+   
     additional_servers = {
         "lu": "whois.dns.lu",
         "be": "whois.dns.be",
@@ -110,10 +110,10 @@ def whois_query(domain):
         "museum": "whois.museum",
         "int": "whois.iana.org",
         "arpa": "whois.iana.org",
-        # Tambahkan server WHOIS untuk ekstensi domain lain di sini
+      
     }
 
-    whois_servers.update(additional_servers)  # Menggabungkan dua dictionary
+    whois_servers.update(additional_servers)  
 
     domain_parts = domain.split(".")
     if len(domain_parts) < 2:
